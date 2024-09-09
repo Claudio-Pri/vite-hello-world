@@ -2,26 +2,23 @@
   export default {
   data() {
     return { 
-      message: 'vite + vue'
+      message: 'La mia prima app con Vite!'
      }
   },
 }
 </script>
 
 <template>
-  <header>
+  <div>
     <h1>
       {{ message }}
     </h1>
-  </header>
+  </div>
 </template>
 
 <style scoped>
-header {
-  background-color: aqua;
-  text-align: center;
-}
 h1 {
-  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
 </style>

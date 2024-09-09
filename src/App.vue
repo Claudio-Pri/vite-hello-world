@@ -8,6 +8,7 @@ Passaggi import componente:
 
 // 1) Importazione componente
 import AppHeader from './components/AppHeader.vue';
+import AppTitle from './components/AppTitle.vue';
 
   export default {
   data() {
@@ -17,12 +18,11 @@ import AppHeader from './components/AppHeader.vue';
   },
   //2) Dichiarazione del componente (prima o dopo data())
   components: {
-    AppHeader
+    AppHeader,
+    AppTitle,
   },
   methods: {
-    incrementCount() {
-      this.count++;
-    }
+    
   }
 }
 </script>
@@ -32,9 +32,7 @@ import AppHeader from './components/AppHeader.vue';
   <div>
     <!-- 3) Utilizzo del componente come tag htm (self-closing) -->
     <AppHeader/>
-    <button @click="incrementCount()">
-      {{ count }}
-    </button>
+    <AppTitle/>
   </div>
 </template>
 
