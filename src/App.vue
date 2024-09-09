@@ -9,6 +9,7 @@ Passaggi import componente:
 // 1) Importazione componente
 import AppHeader from './components/AppHeader.vue';
 import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue';
 
   export default {
   data() {
@@ -20,6 +21,7 @@ import AppTitle from './components/AppTitle.vue';
   components: {
     AppHeader,
     AppTitle,
+    AppHero,
   },
   methods: {
     
@@ -33,6 +35,7 @@ import AppTitle from './components/AppTitle.vue';
     <!-- 3) Utilizzo del componente come tag htm (self-closing) -->
     <AppHeader/>
     <AppTitle/>
+    <AppHero/>
   </div>
 </template>
 
